@@ -7,21 +7,7 @@ body {
 }
 
 
-@media (max-width: 320px) {
-  body {
-    font-size: 16px;
-  }
-  .container {
-    width: 90%;
-  }
-  .image {
-    width: 100%;
-  }
-  .nav {
-    flex-direction: column; /* Jei meniu yra horizontalus, padaryti jį vertikaliu */
-  }
-}
-/* navigacija */
+
 
 
 nav {
@@ -364,14 +350,14 @@ img:hover {
 
 /* CSS */
 .conteineriukas {
-    max-width: 100%;
+    max-width: 98%;
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex: 1;
     flex-direction: column;
     padding: 20px;
-    background: #f4efeff0;
+    /* background: #f4efeff0; */
     display: flex;
     align-items: center;
     min-height: 40vh; /* Užima visą ekrano aukštį */
@@ -626,44 +612,17 @@ footer {
     /* } */
   /* } * */
 
-  @media (max-width: 320px) {
-    /* Header */
-    header {
-      padding: 50px 20px; /* Reduce padding for smaller screens */
-    }
-  
-    /* Navigation */
-    nav {
-      flex-direction: column; /* Make navigation vertical on smaller screens */
-      text-align: center; 
-    }
-  
-    /* Features section */
-    .features {
-      flex-direction: column; /* Make features vertical on smaller screens */
-    }
-  
-    .Stulpelis {
-      width: 100%; /* Make columns full width on smaller screens */
-      margin-bottom: 20px; 
-    }
-  
-    /* Testimonials section */
-    .testimonials {
-      flex-direction: column; /* Make testimonials vertical on smaller screens */
-      align-items: center; 
-    }
-  
-    .testimonial {
-      margin-bottom: 20px;
-    }
-  
-    /* General adjustments */
-    h1 {
-      font-size: 2rem; /* Reduce font size */
-    }
-  
-    p {
-      font-size: 1rem; /* Reduce font size */
-    }
+    /* Stiliai mobiliesiems įrenginiams */
+@media (max-width: 320px) {
+  .container {
+      width: 95%; /* Padidiname plotį, kad geriau tilptų mažame ekrane */
   }
+
+  .columnn {
+      flex-direction: column; /* Keičiame išdėstymą į vertikalią koloną */
+  }
+
+  .image {
+      width: 100%; /* Vaizdas užima visą eilutės plotį */
+  }
+}
